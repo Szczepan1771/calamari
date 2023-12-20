@@ -1,7 +1,7 @@
 import "./styles.scss"
 import {FC, memo, useState} from "react";
-import {ActionIcon} from "../ActionIcon";
 import {RatingType} from "../../../types";
+import {Icon} from "../../atoms/Icon";
 
 interface RatingComponentProps {
     rating: number
@@ -19,12 +19,14 @@ export const RatingComponent: FC<RatingComponentProps> = memo((props) => {
         <div className="rating-wrapper row">
             {Array.from({length: MAX_RATING}).map((_, index) => (
                 <div
+                    key={`rating-${index}`}
                     onMouseEnter={() => setHover(index)}
                     onMouseLeave={() => setHover(Math.round(0))}
-                    key={`rating-${index}`}
+                    onClick={() => !isVoted && onClick(index + 1 as RatingType)}
+                    data-testid="rating-item"
                     className={`rating-item ${!isVoted ? (hover <= (index) ? ""  : "active") : (Math.round(rating) <= index ? ""  : "active")}`}
                 >
-                    <ActionIcon name="star" onClick={() => onClick(index + 1 as RatingType)}/>
+                    <Icon name="star" />
                 </div>
             ))}
         </div>

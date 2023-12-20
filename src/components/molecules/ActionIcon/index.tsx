@@ -14,7 +14,7 @@ interface ActionIconProps {
 export const ActionIcon: FC<ActionIconProps> = memo((props) => {
     const {name, onClick, variant = "basic", isActive, size = 20} = props
     return (
-        <div onClick={onClick} className={`${variant === "basic" ? "" : "action"} ${isActive ? "selected" : ""}`}>
+        <div data-testid={`action_icon-${name}`} onClick={onClick} className={`${variant === "basic" ? "" : "action"} ${isActive ? "selected" : ""}`}>
             <Icon name={name} size={size}/>
         </div>
     )

@@ -1,5 +1,7 @@
 import {SpecialistItem} from "../types";
 
+
+
 export const specialistList: SpecialistItem[] = [
     {
         name: "Cora",
