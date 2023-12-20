@@ -1,0 +1,139 @@
+.specialist_tile {
+  align-items: center;
+  width: 32rem;
+  background-color: var(--white);
+  padding-top: 2.4rem;
+  box-shadow: 0 .3px 1.3px 0 rgba(231, 234, 247, 0.35);
+  border-radius: .4rem;
+  transition: .2s;
+  &:hover {
+    cursor: pointer;
+    border: .1rem solid var(--primary);
+    transform: scale(1.05);
+  }
+  &__top-section {
+    width: 100%;
+    align-items: flex-start;
+    justify-content: space-between;
+    & div:first-of-type {
+      transition: .2s;
+      &:hover {
+        border-radius: .4rem;
+        background-color: var(--third);
+      }
+    }
+  }
+  &__user-details {
+    justify-content: center;
+    margin: 2.7rem 0 4.7rem;
+  }
+  &__name {
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: var(--black);
+    text-align: center;
+  }
+  &__specialization {
+    font-size: 1.4rem;
+    color: var(--secondary);
+    text-align: center;
+  }
+  &__action-section {
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 1.6rem;
+    border-bottom: .1rem solid var(--borderColor);
+    gap: 1.5rem;
+  }
+  &__rating-section {
+    justify-content: space-between;
+    padding: 2.5rem 0 2.1rem;
+    align-items: center;
+    width: 100%;
+  }
+  &__rating-wrapper {
+    gap: .8rem;
+  }
+  &__rating-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.8rem;
+    height: 2.8rem;
+    background-color: var(--ratingBackground);
+    border-radius: .4rem;
+    transition: .2s;
+    & span {
+      color: var(--white);
+    }
+    &.active {
+      background-color: var(--ratingBackgroundActive);
+    }
+    &:hover {
+      background-color: var(--ratingBackgroundActive);
+      cursor: pointer;
+      & span {
+        color: var(--white);
+      }
+    }
+  }
+  &__rating-value {
+    font-size: 3rem;
+    font-weight: 600;
+    color: var(--black);
+  }
+
+  &__votes-wrapper {
+    align-items: center;
+  }
+
+  &__votes {
+    font-size: 1.2rem;
+    color: var(--secondary);
+  }
+  &__bottom-section {
+    justify-content: space-between;
+    width: 100%;
+    border-top: .1rem solid var(--borderColor);
+  }
+
+  &__bottom-item {
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem 0;
+    width: 50%;
+    color: var(--secondary);
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    transition: .2s;
+    &:first-of-type {
+      border-right: .1rem solid var(--borderColor);
+    }
+    &:hover {
+      background-color: var(--primary);
+      color: var(--white);
+      cursor: pointer;
+    }
+  }
+
+  &__bottom-button {
+    font-size: 1.2rem;
+    color: var(--secondary);
+    text-transform: uppercase;
+  }
+}
+
+.p20 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.p24 {
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
+}
+
+.p40 {
+  padding-left: 4rem;
+  padding-right: 4rem;
+}

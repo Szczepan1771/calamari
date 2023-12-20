@@ -1,0 +1,27 @@
+.rating-wrapper {
+  gap: .8rem;
+}
+
+.rating-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.8rem;
+  height: 2.8rem;
+  background-color: var(--ratingBackground);
+  border-radius: .4rem;
+  transition: .2s;
+  & span {
+    color: var(--white);
+  }
+  &.active {
+    background-color: var(--ratingBackgroundActive);
+  }
+  &:hover {
+    background-color: var(--ratingBackgroundActive);
+    cursor: pointer;
+    & span {
+      color: var(--white);
+    }
+  }
+}

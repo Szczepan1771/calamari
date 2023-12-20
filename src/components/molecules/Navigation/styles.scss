@@ -1,0 +1,11 @@
+.navigation {
+  position: absolute;
+  @media screen and (max-width: 1366px) {
+    width: 100%;
+    position: static;
+    flex-wrap: wrap;
+    & .nav-item {
+      width: 100%;
+    }
+  }
+}

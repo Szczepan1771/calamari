@@ -1,0 +1,20 @@
+.page-header {
+  max-width: 138rem;
+  flex-wrap: wrap;
+  gap: 2rem;
+  &__navigator {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5rem;
+  }
+  &__title {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  @media screen and (max-width: 1024px) {
+    & .search {
+      width: 100%;
+    }
+  }
+}

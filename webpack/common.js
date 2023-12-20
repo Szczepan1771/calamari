@@ -8,7 +8,8 @@ module.exports = (env) => {
         entry: './src/index.tsx',
         output: {
             path: path.join(__dirname, '../build'),
-            filename: "bundle.js"
+            filename: "bundle.js",
+            publicPath: "/"
         },
         module: {
             rules: [
@@ -36,7 +37,7 @@ module.exports = (env) => {
                 },
                 {
                     test: /\.(png|jpe?g|gif|svg)$/i,
-                    type: "asset/resource"
+                    type: "asset/resource",
                 }
             ]
         },

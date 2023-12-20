@@ -1,0 +1,18 @@
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background-color: var(--avatarBackgroundEven);
+  color: var(--primary);
+  &__image {
+    width: 100%;
+    height: auto;
+  }
+  &__initials {
+    font-size: 2.4rem;
+    font-weight: 600;
+  }
+}
