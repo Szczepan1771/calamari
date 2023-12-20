@@ -4,6 +4,7 @@ import {AvatarComponent} from "../../atoms/AvatarComponent";
 import "./styles.scss";
 import {RatingComponent} from "../../molecules/RatingComponent";
 import {ActionIcon} from "../../molecules/ActionIcon";
+import {getInitials} from "../../../utils";
 
 interface SpecialistTileProps extends SpecialistItem {
     isFavorite?: boolean
@@ -19,7 +20,7 @@ export const SpecialistTile: FC<SpecialistTileProps> = (props) => {
                 <ActionIcon name="more_horiz" onClick={() => console.log("MORE HORIZON")}/>
                 <ActionIcon isActive={isFavorite} name="favorite" onClick={() => handleAddRemoveFavorite?.(id)} size={24}/>
             </div>
-            <AvatarComponent id={id} initials={"SS"} avatar={photo}/>
+            <AvatarComponent id={id} initials={getInitials(name, surname)} avatar={photo}/>
             <div className="specialist_tile__user-details column">
                 <p className="specialist_tile__name">{name} {surname}</p>
                 <p className="specialist_tile__specialization">{specialization}</p>

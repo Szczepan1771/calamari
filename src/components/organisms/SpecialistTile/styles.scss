@@ -6,6 +6,10 @@
   box-shadow: 0 .3px 1.3px 0 rgba(231, 234, 247, 0.35);
   border-radius: .4rem;
   transition: .2s;
+  &:nth-child(even) .avatar {
+    background-color: var(--avatarBackgroundEven);
+    color: var(--orange);
+  }
   &:hover {
     cursor: pointer;
     border: .1rem solid var(--primary);

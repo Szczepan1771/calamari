@@ -13,3 +13,5 @@ export const navigationConfig: NavItemType[] = [
 ]
 
 export const PAGE_SIZE = 40
+
+export const getInitials = (name: string, surname: string) => `${name[0]}${surname[0]}`

@@ -17,7 +17,8 @@
     --white: #FFFFFF;
     --black: #0F1D38;
     --orange: #FFAF14;
-    --avatarBackgroundEven: #DFEBFF;
+    --avatarBackgroundOdd: #DFEBFF;
+    --avatarBackgroundEven: #FFF5DF;
     --actionButtonBackground: #F3F5FC;
 }
 
@@ -92,8 +93,6 @@ main {
     flex-wrap: wrap;
     color: var(--primary);
 }
-
-
 
 @media screen and (max-width: 1200px) {
     .list {
